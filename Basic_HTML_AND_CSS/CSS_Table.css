@@ -1,0 +1,21 @@
+
+table {
+	border: 5px solid Lime;
+}
+
+td:hover {
+	background-color: chartreuse;
+	color: Fuchsia;
+}
+
+tr, th { 
+	background-color: black;
+	color: Fuchsia;
+}
+
+tr, td {
+	background-color: black;
+	color: chartreuse;
+}
+ 
+h1 {text-align: center;}
