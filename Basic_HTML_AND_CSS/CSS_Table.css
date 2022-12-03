@@ -1,6 +1,6 @@
 
 table {
-	border: 5px solid Lime;
+	border: 5px solid silver;
 }
 
 td:hover {
@@ -11,6 +11,7 @@ td:hover {
 tr, th { 
 	background-color: black;
 	color: Fuchsia;
+	font-variant: small-caps;
 }
 
 tr, td {
@@ -18,4 +19,4 @@ tr, td {
 	color: chartreuse;
 }
  
-h1 {text-align: center;}
+h1 {text-align: center; font-size:40px; color: black; font-variant: small-caps;}
