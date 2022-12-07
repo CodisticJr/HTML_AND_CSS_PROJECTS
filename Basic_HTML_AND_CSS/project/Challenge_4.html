@@ -1,0 +1,56 @@
+<!-- Challenge #4
+Part one
+
+Define and learn how to use the following tags:
+
+<article> tag =  Basically, A container, headers and paragraphs included, ID, 	Defines an article  The <article> tag specifies independent, self-contained content.
+	An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+	Note: The <article> element does not render as anything special in a browser. However, you can use CSS to style the <article> element
+	
+<details> tag	(Container for additional hidden text with button )  Defines additional details that the user can view or hide The <details> tag specifies additional details that the user can open and close on demand.
+	The <details> tag is often used to create an interactive widget that the user can open and close. By default, the widget is closed. When open, it expands, and displays the content within.
+	Any sort of content can be put inside the <details> tag. 
+	Tip: The <summary> tag is used in conjunction with <details> to specify a visible heading for the details.
+
+<summary> tag (Button Lable)  The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.
+	Note: The <summary> element should be the first child element of the <details> element.
+
+<time> tag and datetime attribute
+	The <time> tag defines a specific time (or datetime).
+	
+	The datetime attribute of this element is used translate the time into a machine-readable format 
+	so that browsers can offer to add date reminders through the user's calendar,
+	and search engines can produce smarter search results.
+
+Part two
+
+Open an HTML file, and write the following code within it:
+
+<article> tag
+<details> tag
+<summary> tag
+<time> tag and datetime attribute
+Save and successfully run your code in the browser. -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+	<article>
+		<h1>First Article, Heading One</h1>
+		<p>Article one, P1</p>
+	</article>
+	<article>
+		<h2>What Time Is A Good Time?</h2>
+			<p>Today: <time datetime="2022-12-06 18:00">: Dec. 6, 2022.</p>
+		<details>
+			<summary>When's Good?</summary>
+			<p>Any time between birth and death.<br> Between <time>0:00:00</time> and <time>23:59:00</time>Local time. </p>
+		</details>
+	</article>
+	</body>
+</html>
+		
