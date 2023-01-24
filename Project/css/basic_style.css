@@ -1,3 +1,4 @@
+
 body{
     background-color:#fff;
 }
@@ -19,34 +20,37 @@ h1{
 /* --------------------------------------
     SELECT ALL SQUARES IN THE ARRAY
 ------------------------------------------*/
+
 .container .squares:nth-child(-n+4) {
     background-image: url("../images/icons/icons.png");
     color: #fff;
-    float: left;
+    float: left;     /*--causes liner code to display in order horizontally instead of vertcailly --*/
     width: 100px;
     height: 100px;
-    margin: 5px;
+    margin: 5px;         /* space from perimeter */
     border: 1px solid black;
-    border-radius: 25%;
-    cursor: pointer;
-    transition: transform .5s ease-in-out;
+    border-radius: 25%;     /*-- top, right, bottom, left; if all the same, one will do */
+    cursor: pointer;              /*-- change mouse icon when in specified area/element */
+    transition: transform .5s ease-in-out;  /*--required key:value :property :duration :delay  there is more availible, these are required-- */
 }
 
 /*-----------------------------------------------
      SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
 -----------------------------------------------*/
-.squares:nth-child(-n+4) p{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.5em;
-    font-weight: 900;
-    text-align: center;
-    margin: 0;
+
+.squares:nth-child(-n+4) p{   /*-- nth-child(-=start from begining; n=variable value(author-sets); +4 = add 4(as many as needed/required for purpose); formula (-n,+n) user set with +n -- */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;   /*--"choice font" if not that then this, if not that-that then this, ok display you default browser text. --*/
+    font-size: 1.5em;    /*-- optionsof=:px;:em(?);:%;--*/
+    font-weight: 900;    /*-- How bold --*/
+    text-align: center;    /*-- Centers text in square -- */
+    margin: 0;     /*-- t,r,b,l --*/
     text-shadow: 2px 1px 4px rgba(0,0,0,0.8);
 }
 
 /*----------------------------------------------
      INDIVIDUALLY SELECT A SQUARE IN THE ARRAY
 -----------------------------------------------*/
+
 .squares:nth-child(1){
     background: #4240ff;
 }
@@ -65,20 +69,41 @@ h1{
 /*----------------------------------------------
     HOVER, TRANSLATE & TRANSFORM EFFECTS
 ----------------------------------------------*/
-.container .squares:nth-child(-n+4):hover{
+
+.container .squares:nth-child(-n+4):hover {    /*--No space ): --*/
     background-image: url("../images/icons/icons2.png");
+    transform: scale(.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
 }
 
-.squares:nth-child(1):hover{
-    backround:#13b4ff;
+.squares:nth-child(1):hover {
+    background: #13b4ff;
 }
 
-.squares:nth-child(2):hover{
-    backround: #d861af
+.squares:nth-child(2):hover {
+    background: #d861af
 }
-.squares:nth-child(3):hover{
-    backround: #81205f;
+
+.squares:nth-child(3):hover {
+    background: #81205f;
 }
-.squares:nth-child(4):hover{
-    backround:#77b800;
+
+.squares:nth-child(4):hover {
+    background:#77b800;
+}
+
+/*--------------------------------------------------
+    ANIMATION EFFECT 
+-----------------------------------------------*/
+@keyframes race {
+    0%, 100% {
+        transform: translateY(0px);
+        background-image: url("..images/icons/icons.png")
+    }
+    50% {
+        transform: translateY(300px);
+    }
 }
