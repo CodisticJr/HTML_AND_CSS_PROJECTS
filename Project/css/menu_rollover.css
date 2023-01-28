@@ -1,0 +1,78 @@
+body {
+    background: #184352;
+}
+
+.wrap {  /*declaration of class=wrap, will have these propeties and values; selector=wrap; property/ies=top;left;height;width; value/s=0;0;auto;100%; == CSS Rule Set */
+    top: 0;       /* pixels from top right of display window*/
+    left: 0;      /* pixels from left of display window*/
+    height: auto;  /*sets the height of display, auto will adjust to users window size*/
+    width: 100%;  /* how wide is this class, sit with pixels or percent, pixels is element, percent is of window size.*/
+}
+
+.menu-container {   /* declaring a class=menu-container: elements in this class: shall have these actions and effects*?
+    top: 0;
+    left: 0;
+    /*to the top edge of the screen*/
+    position: absolute;   /*place holder for element on display window, absolute=this goes here always.*/
+    width: 100%;
+    background-color: #184352;
+}
+
+.menu {  /* for class=menu perform these actions and effects */
+    font: bold 12px/18px sans-serif;
+    text-align: center;
+    display: inline;  /*displayed verticle(block) by defualt, inline=horizontal orderly display:left-right; block=defualt:top-bottom; */
+    margin: 0;  
+    /* margin is outter perimeter grace
+    Padding is the inner perimeter grace*/
+    padding: 0;
+    list-style: none;  /*list items start with a bullet-point by default: none=nothing;*/
+}
+
+.menu li {     /* for class=menu: But only li=list items: perform these actions and effects;*/
+    color: #B3B3B3;
+    display: inline-block;  /* inline-block=inline-top-bottom;  see display in the menu class*/
+    margin-right: -2px;     /* programer wanted boxes to be touching, with out this there was space, outsidegrace*/
+    position: relative;  /* this elements position is based, relative to its parent elements position*/
+    padding: 12px 40px;
+    border: 1px solid #9D9FA2; 
+    border-radius: 1.5px;
+    background-color: #387593;
+    cursor: pointer;  /*when mouse is on this element, what icon should display to user*/
+}
+
+.menu li:hover {    /* for -class='menu' on list item/s=li  hover=when mouse is hovering element; do these things:*/
+    background-color: #5EAFDF;
+    color: #fff;
+}
+
+.menu li:hover ul{  
+    display: block;
+    opacity: 1;  /*see submenu main class for description 1=visible 0=hidden*/
+    /*While hovered, drop-down menu apears
+    This also avoids a block-level bug*/
+    visibility: visible;
+}
+
+.submenu {
+    padding: 0;
+    left: 0;
+    position: absolute;
+    top: 43.5px;
+    width: 125.5;
+    opacity: 0;     /* opacity:0=hide;1=show; 
+    While not being hovered, drop-down menu hides,
+    This visibility propety declaration also avoids a block-level bug*/
+    visibility: hidden;
+}
+
+.submenu li{     /* for the submenu class list items, do this to them:*/
+    background-color: #387593;
+    display: block;   /*  block=all element affected by this class will be hidden; by defualt all elements will be displayed, unless stated*/
+    color: #B3B3B3;
+}
+
+.submenu li:hover{   /*When the mouse hovers on a list item in the submenu, do these things;*/
+    color: #fff;
+    background-color: #5EAFDF;
+}
