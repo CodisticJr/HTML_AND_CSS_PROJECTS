@@ -3,16 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>The Space Station | Resort</title>
-		<!-- 
 		<link rel="shortcut Icon" type="image/png" href="favicon.ico">
-		-->
-		<link rel="stylesheet" href="./css/shared.css">
-		<link rel="stylesheet" href="./css/animations.css">
-		<!-- 
-		<link rel="stylesheet" href="./css/basic_style.css">
-		<link rel="stylesheet" href="./css/menu_rollover.css"> 
-		<link rel="stylesheet" href="./css/photo_style.css"> 
-		-->
+		<link rel="stylesheet" href="css/animations.css">
+		<link rel="stylesheet" href="css/shared.css">
 	</head>
 
 	<body>
@@ -25,7 +18,7 @@
 					<a href="#gallery"><li>GALLERY</li></a>
 					<a href="#contact"><li>RESERVATIONS</li></a>
 				</ul>
-			</div>
+			<div>
 		</div>
 		<!-- END NAV -->
 		
@@ -48,7 +41,7 @@
 					<!-- PHOTO-CONTAINER_1 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_1.png" alt="1">  <!-- UPDATED changed to images/thumb/thumbnail_(#).png -->
+							<img src="./images/thumb/thumbnail_1.png" alt="check file path">  <!-- UPDATED changed to images/thumb/thumbnail_(#).png -->
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several space launches departing daily, book your flight today!</p>
@@ -60,7 +53,7 @@
 					<!-- PHOTO-CONTAINER_2 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_2.png" alt="2">
+							<img src="images/thumb/thumbnail_2.png" alt="close">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several space launches departing daily, book your flight today!</p>
@@ -72,7 +65,7 @@
 					<!-- PHOTO-CONTAINER_3 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_3.png" alt="3">
+							<img src="images/thumb/thumbnail_3.png" alt="close">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several space launches departing daily, book your flight today!</p>
@@ -84,7 +77,7 @@
 					<!-- PHOTO-CONTAINER_4 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_4.png" alt="4">
+							<img src="images/thumb/thumbnail_4.png" alt="close">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several space launches departing daily, book your flight today!</p>
@@ -96,7 +89,7 @@
 					<!-- PHOTO-CONTAINER_5 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_5.png" alt="5">
+							<img src="images/thumb/thumbnail_5.png" alt="close">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several space launches departing daily, book your flight today!</p>
@@ -108,7 +101,7 @@
 					<!-- PHOTO-CONTAINER_6 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_6.png" alt="6">
+							<img src="images/thumb/thumbnail_6.png" alt="close">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several space launches departing daily, book your flight today!</p>
@@ -120,7 +113,7 @@
 					<!-- PHOTO-CONTAINER_7 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_7.png" alt="7">
+							<img src="images/thumb/thumbnail_7.png" alt="close">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several space launches departing daily, book your flight today!</p>
@@ -132,7 +125,7 @@
 					<!-- PHOTO-CONTAINER_8 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_8.png" alt="8">
+							<img src="images/thumb/thumbnail_8.png" alt="close">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several space launches departing daily, book your flight today!</p>
@@ -144,7 +137,7 @@
 					<!-- PHOTO-CONTAINER_9 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/thumb/thumbnail_9.png" alt="9">
+							<img src="./images/thumb/thumbnail_9.png" alt="close">
 							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>We have several space launches departing daily, book your flight today!</p>
@@ -159,34 +152,36 @@
 		<!-- END OF GALLERY -->
 		
 		<!-- RSVP -->
-		<section id="contact">
-			<div class="container">
-				<div class="heading-padding">
-					<h1 class="heading-padding">Reservations</h1>
-					<div class="reservation">
-						<h2>
-							<span>Your Adventure Is Just Around The Moon!</span>
-							<br />Reserve Your Flight Today!
-						</h2>
-						<p class="rsvp-text">
+		<section>
+			<div id="contact">
+				<div>
+					<h1>Reservations</h1>
+						<div>
+							<h2><span>Your Adventure Is Just Around The Moon!</span>
+								<br />Reserve Your Flight Today!
+									</h2>
+						<details>
+							<summary>Or Checkout The Tech Academy</summary>
+							<p><a href="https://learncodinganywhere.com/" target="new">The Tech Academy</a></p>
+						</details>					
+						<p>
 							Please provide us with your basic contact information.
 						</p>
-						<div class="form-rsvp">
+						<div>
 							<form action="" method="post">
-								<input class="rvsp" type="text" value="" placeholder="First Name">
-								<input class="rvsp" type="text" value="" placeholder="Last Name">
-								<input class="rvsp" type="text" value="" placeholder="Email Address">
-								<input class="rvsp" type="text" value="" placeholder="Phone Number">
+								<input class="rvsp" type="text" value="First Name">
+								<input class="rvsp" type="text" value="Last Name">
+								<input class="rvsp" type="text" value="Email Address">
+								<input class="rvsp" type="text" value="Phone Number">
 								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
-								<div class="submit">
 									<input type="submit" value="Submit">
 								</div>
 							</form>
 						</div>
 					</div>
-				</div>
+			</div>
 			</div>
 		</section>
 		<!-- END RVSP -->

@@ -9,7 +9,7 @@ body {
     width: 100%;  /* how wide is this class, sit with pixels or percent, pixels is element, percent is of window size.*/
 }
 
-.menu-container {   /* declaring a class=menu-container: elements in this class: shall have these actions and effects*?
+.menu-container {   /* declaring a class=menu-container: elements in this class: shall have these actions and effects*/
     top: 0;
     left: 0;
     /*to the top edge of the screen*/
